@@ -4,3 +4,6 @@ plugins {
     id("org.jetbrains.kotlin.plugin.compose") version "2.2.21" apply false
     id("com.google.dagger.hilt.android") version "2.57.2" apply false
 }
+
+// ✅ Load Jacoco Gradle script
+apply(from = "jacoco.gradle.kts")
