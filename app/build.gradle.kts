@@ -4,6 +4,7 @@ plugins {
     id("org.jetbrains.kotlin.kapt")
     id("com.google.dagger.hilt.android")
     id("org.jetbrains.kotlin.plugin.compose")
+    id("jacoco") // ✅ Coverage plugin
 }
 
 android {
@@ -12,7 +13,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.unitconverter"
-        minSdk = 26 // ✅ required for hilt-navigation-compose 1.3.0
+        minSdk = 26 // Required for hilt-navigation-compose:1.3.0
         targetSdk = 35
         testApplicationId = "com.example.unitconverter.test"
         testInstrumentationRunner = "com.google.dagger.hilt.android.testing.HiltTestRunner"
@@ -67,7 +68,7 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview")
     debugImplementation("androidx.compose.ui:ui-tooling")
 
-    // ✅ Lifecycle + ViewModel
+    // ✅ Lifecycle & ViewModel
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.9.4")
     implementation("androidx.lifecycle:lifecycle-runtime-compose:2.9.4")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.9.4")
@@ -78,7 +79,7 @@ dependencies {
     kapt("com.google.dagger:hilt-android-compiler:2.57.2")
     implementation("androidx.hilt:hilt-navigation-compose:1.3.0")
 
-    // ✅ Hilt for Instrumentation Tests
+    // ✅ Hilt for Instrumented Tests
     androidTestImplementation("com.google.dagger:hilt-android-testing:2.57.2")
     kaptAndroidTest("com.google.dagger:hilt-android-compiler:2.57.2")
 
@@ -86,11 +87,11 @@ dependencies {
     testImplementation("com.google.dagger:hilt-android-testing:2.57.2")
     kaptTest("com.google.dagger:hilt-android-compiler:2.57.2")
 
-    // ✅ Unit Testing
+    // ✅ Unit Tests: JUnit & MockK
     testImplementation("junit:junit:4.13.2")
     testImplementation("io.mockk:mockk:1.14.6")
 
-    // ✅ UI & Instrumentation Testing
+    // ✅ Instrumented + UI Tests
     androidTestImplementation("androidx.test.ext:junit:1.3.0")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.7.0")
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
@@ -99,4 +100,34 @@ dependencies {
 
 kapt {
     correctErrorTypes = true
+}
+
+// ✅ Jacoco HTML Report Setup
+tasks.register<JacocoReport>("jacocoTestReport") {
+    dependsOn("testDebugUnitTest")
+
+    reports {
+        xml.required.set(true)
+        html.required.set(true)
+    }
+
+    val fileFilter = listOf(
+        "**/R.class", "**/R$*.class", "**/BuildConfig.*", "**/Manifest*.*",
+        "**/*Test*.*", "android/**/*.*"
+    )
+
+    val mainSrc = "${project.projectDir}/src/main/java"
+
+    classDirectories.setFrom(
+        fileTree("${buildDir}/intermediates/classes/debug") {
+            exclude(fileFilter)
+        }
+    )
+
+    sourceDirectories.setFrom(files(mainSrc))
+    executionData.setFrom(
+        fileTree(buildDir) {
+            include("**/jacoco/testDebugUnitTest.exec")
+        }
+    )
 }
