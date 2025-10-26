@@ -1,1 +1,47 @@
+name: Android CI
 
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    env:
+      JAVA_HOME: ${{ steps.setup-java.outputs.path }}
+
+    steps:
+      - name: 🧾 Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: ☕ Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: 🛠️ Set up Android SDK
+        uses: android-actions/setup-android@v2
+
+      - name: 📜 Grant Gradle Permission
+        run: chmod +x ./gradlew
+
+      - name: 🧪 Run Unit Tests
+        run: ./gradlew testDebugUnitTest
+
+      - name: 🧪 Run UI Tests (Instrumented)
+        run: ./gradlew connectedDebugAndroidTest
+
+      - name: 📈 Generate Code Coverage Report
+        run: ./gradlew jacocoTestReport
+
+      - name: 📦 Archive Coverage Report (HTML)
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: app/build/reports/jacoco/jacocoTestReport/html
