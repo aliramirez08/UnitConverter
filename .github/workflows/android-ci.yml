@@ -11,8 +11,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    env:
-      JAVA_HOME: ${{ steps.setup-java.outputs.path }}
 
     steps:
       - name: 🧾 Checkout Repository
@@ -21,7 +19,7 @@ jobs:
       - name: ☕ Set up JDK 17
         uses: actions/setup-java@v3
         with:
-          distribution: temurin
+          distribution: tem
           java-version: 17
 
       - name: 🛠️ Set up Android SDK
