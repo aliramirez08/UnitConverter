@@ -1,0 +1,1430 @@
+Initialized native services in: /Users/alicia/.gradle/native
+Initialized jansi services in: /Users/alicia/.gradle/native
+Found daemon DaemonInfo{pid=3804, address=[45bd8b2a-c5ec-47a6-a458-e29fffa3c716 port:49983, addresses:[/127.0.0.1]], state=Idle, lastBusy=1761480567206, context=DefaultDaemonContext[uid=25107467-e42b-4d56-8e12-b5c093005e4f,javaHome=/Applications/Android Studio.app/Contents/jbr/Contents/Home,javaVersion=21,javaVendor=JetBrains s.r.o.,daemonRegistryDir=/Users/alicia/.gradle/daemon,pid=3804,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+JVM is incompatible.
+Wanted: DaemonRequestContext{jvmCriteria=/Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home (no JDK specified, using current Java home), daemonOpts=[-Xmx2048m, -Dfile.encoding=UTF-8, -Duser.country=US, -Duser.language=en, -Duser.variant], applyInstrumentationAgent=true, nativeServicesMode=ENABLED, priority=NORMAL}
+Actual: DefaultDaemonContext[uid=25107467-e42b-4d56-8e12-b5c093005e4f,javaHome=/Applications/Android Studio.app/Contents/jbr/Contents/Home,javaVersion=21,javaVendor=JetBrains s.r.o.,daemonRegistryDir=/Users/alicia/.gradle/daemon,pid=3804,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+
+  Looking for a different daemon...
+The client will now receive all logging from the daemon (pid: 3829). The daemon log file: /Users/alicia/.gradle/daemon/8.13/daemon-3829.out.log
+Starting 3rd build in daemon [uptime: 8 mins 40.132 secs, performance: 98%, GC rate: 0.00/s, heap usage: 0% of 2 GiB]
+Using 4 worker leases.
+Now considering [/Users/alicia/AndroidStudioProjects/UnitConverter] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file '/Users/alicia/AndroidStudioProjects/UnitConverter/settings.gradle.kts'.
+Type-safe project accessors is an incubating feature.
+Projects loaded. Root project using build file '/Users/alicia/AndroidStudioProjects/UnitConverter/build.gradle.kts'.
+Included projects: [root project 'UnitConverter', project ':app']
+
+> Configure project :
+Evaluating root project 'UnitConverter' using build file '/Users/alicia/AndroidStudioProjects/UnitConverter/build.gradle.kts'.
+Resolved plugin [id: 'com.android.application', version: '8.13.0', apply: false]
+Resolved plugin [id: 'org.jetbrains.kotlin.android', version: '2.2.21', apply: false]
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.2.21', apply: false]
+Resolved plugin [id: 'com.google.dagger.hilt.android', version: '2.57.2', apply: false]
+
+> Configure project :app
+Evaluating project ':app' using build file '/Users/alicia/AndroidStudioProjects/UnitConverter/app/build.gradle.kts'.
+Resolved plugin [id: 'com.android.application', version: '8.13.0']
+Resolved plugin [id: 'org.jetbrains.kotlin.android', version: '2.0.21']
+Resolved plugin [id: 'org.jetbrains.kotlin.kapt', version: '2.0.21']
+Resolved plugin [id: 'com.google.dagger.hilt.android', version: '2.52']
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.2.21']
+Using default execution profile
+Build 3e79f7f7-8a26-4a9a-b24e-884a595160b6 is started
+Using Kotlin Gradle Plugin gradle813 variant
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+All projects evaluated.
+Task path ':app:testDebugUnitTest' matched project ':app'
+Task name matched 'testDebugUnitTest'
+Starting process 'command '/usr/libexec/java_home''. Working directory: /Users/alicia/.gradle/daemon/8.13 Command: /usr/libexec/java_home -V
+Successfully started process 'command '/usr/libexec/java_home''
+Starting process 'command '/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/bin/java''. Working directory: /Users/alicia/.gradle/.tmp/tmp-jvm9040748077376041152probe Command: /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/bin/java -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command '/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/bin/java''
+Received JVM installation metadata from '/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home': {JAVA_HOME=/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home, JAVA_VERSION=17.0.14, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=17.0.14+7, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=17.0.14+7, VM_VENDOR=Eclipse Adoptium, OS_ARCH=x86_64}
+Selected primary task 'testDebugUnitTest' from project :app
+Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :app:compileDebugKotlin
+Tasks to be executed: [task ':app:preBuild', task ':app:preDebugBuild', task ':app:checkKotlinGradlePluginConfigurationErrors', task ':app:checkDebugAarMetadata', task ':app:processDebugNavigationResources', task ':app:compileDebugNavigationResources', task ':app:generateDebugResValues', task ':app:mapDebugSourceSetPaths', task ':app:generateDebugResources', task ':app:mergeDebugResources', task ':app:packageDebugResources', task ':app:parseDebugLocalResources', task ':app:createDebugCompatibleScreenManifests', task ':app:extractDeepLinksDebug', task ':app:processDebugMainManifest', task ':app:processDebugManifest', task ':app:processDebugManifestForPackage', task ':app:processDebugResources', task ':app:kaptGenerateStubsDebugKotlin', task ':app:kaptDebugKotlin', task ':app:compileDebugKotlin', task ':app:javaPreCompileDebug', task ':app:compileDebugJavaWithJavac', task ':app:hiltAggregateDepsDebug', task ':app:hiltJavaCompileDebug', task ':app:transformDebugClassesWithAsm', task ':app:bundleDebugClassesToRuntimeJar', task ':app:preDebugUnitTestBuild', task ':app:generateDebugJacocoPropertiesFile', task ':app:processDebugJavaRes', task ':app:bundleDebugClassesToCompileJar', task ':app:kaptGenerateStubsDebugUnitTestKotlin', task ':app:kaptDebugUnitTestKotlin', task ':app:compileDebugUnitTestKotlin', task ':app:javaPreCompileDebugUnitTest', task ':app:compileDebugUnitTestJavaWithJavac', task ':app:hiltAggregateDepsDebugUnitTest', task ':app:hiltJavaCompileDebugUnitTest', task ':app:processDebugUnitTestJavaRes', task ':app:transformDebugUnitTestClassesWithAsm', task ':app:testDebugUnitTest']
+Tasks that were excluded: []
+Resolve mutations for :app:preBuild (Thread[#121,Execution worker,5,main]) started.
+:app:preBuild (Thread[#120,included builds,5,main]) started.
+
+> Task :app:preBuild UP-TO-DATE
+Skipping task ':app:preBuild' as it has no actions.
+Resolve mutations for :app:preDebugBuild (Thread[#120,included builds,5,main]) started.
+:app:preDebugBuild (Thread[#120,included builds,5,main]) started.
+
+> Task :app:preDebugBuild UP-TO-DATE
+Skipping task ':app:preDebugBuild' as it has no actions.
+Resolve mutations for :app:checkKotlinGradlePluginConfigurationErrors (Thread[#121,Execution worker,5,main]) started.
+:app:checkKotlinGradlePluginConfigurationErrors (Thread[#121,Execution worker,5,main]) started.
+
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':app:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :app:checkDebugAarMetadata (Thread[#121,Execution worker,5,main]) started.
+:app:checkDebugAarMetadata (Thread[#121,Execution worker,5,main]) started.
+Resolve mutations for :app:processDebugNavigationResources (Thread[#123,Execution worker Thread 3,5,main]) started.
+:app:processDebugNavigationResources (Thread[#122,Execution worker Thread 2,5,main]) started.
+
+> Task :app:checkDebugAarMetadata
+Caching disabled for task ':app:checkDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:checkDebugAarMetadata' is not up-to-date because:
+  Output property 'dummyOutputDirectory' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/aar_metadata_check/debug/checkDebugAarMetadata has been removed.
+
+> Task :app:processDebugNavigationResources
+Caching disabled for task ':app:processDebugNavigationResources' because:
+  Build cache is disabled
+Task ':app:processDebugNavigationResources' is not up-to-date because:
+  Output property 'outputDir' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/generated/updated_navigation_xml/debug has been removed.
+Resolve mutations for :app:compileDebugNavigationResources (Thread[#122,Execution worker Thread 2,5,main]) started.
+:app:compileDebugNavigationResources (Thread[#122,Execution worker Thread 2,5,main]) started.
+Resolve mutations for :app:generateDebugResValues (Thread[#123,Execution worker Thread 3,5,main]) started.
+:app:generateDebugResValues (Thread[#123,Execution worker Thread 3,5,main]) started.
+
+> Task :app:generateDebugResValues
+Caching disabled for task ':app:generateDebugResValues' because:
+  Build cache is disabled
+Task ':app:generateDebugResValues' is not up-to-date because:
+  Output property 'outputDirectory' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/generated/res/resValues/debug has been removed.
+
+> Task :app:compileDebugNavigationResources
+Caching disabled for task ':app:compileDebugNavigationResources' because:
+  Build cache is disabled
+Task ':app:compileDebugNavigationResources' is not up-to-date because:
+  Output property 'outputDir' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/compiled_navigation_res/debug/compileDebugNavigationResources has been removed.
+The input changes require a full rebuild for incremental task ':app:compileDebugNavigationResources'.
+Resolve mutations for :app:mapDebugSourceSetPaths (Thread[#123,Execution worker Thread 3,5,main]) started.
+:app:mapDebugSourceSetPaths (Thread[#123,Execution worker Thread 3,5,main]) started.
+
+> Task :app:mapDebugSourceSetPaths
+Caching disabled for task ':app:mapDebugSourceSetPaths' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:mapDebugSourceSetPaths' is not up-to-date because:
+  Output property 'filepathMappingFile' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/source_set_path_map/debug/mapDebugSourceSetPaths/file-map.txt has been removed.
+Resolve mutations for :app:generateDebugResources (Thread[#120,included builds,5,main]) started.
+:app:generateDebugResources (Thread[#120,included builds,5,main]) started.
+
+> Task :app:generateDebugResources
+Caching disabled for task ':app:generateDebugResources' because:
+  Build cache is disabled
+Task ':app:generateDebugResources' is not up-to-date because:
+  Output property 'validationReportFile' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt has been removed.
+Resolve mutations for :app:mergeDebugResources (Thread[#120,included builds,5,main]) started.
+:app:mergeDebugResources (Thread[#120,included builds,5,main]) started.
+
+> Task :app:mergeDebugResources
+Caching disabled for task ':app:mergeDebugResources' because:
+  Build cache is disabled
+Task ':app:mergeDebugResources' is not up-to-date because:
+  Output property 'blameLogOutputFolder' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out has been removed.
+  Output property 'blameLogOutputFolder' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2 has been removed.
+  Output property 'blameLogOutputFolder' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/mergeDebugResources.json has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':app:mergeDebugResources'.
+[MergeResources] Inputs are non-incremental full task action.
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values/values.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values_values.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-de/values-de.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-de_values-de.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hi/values-hi.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-hi_values-hi.arsc.flat
+
+Resolve mutations for :app:packageDebugResources (Thread[#123,Execution worker Thread 3,5,main]) started.
+:app:packageDebugResources (Thread[#123,Execution worker Thread 3,5,main]) started.
+
+> Task :app:packageDebugResources
+Caching disabled for task ':app:packageDebugResources' because:
+  Build cache is disabled
+Task ':app:packageDebugResources' is not up-to-date because:
+  Output property 'dataBindingLayoutInfoOutFolder' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/data_binding_layout_info_type_package/debug/packageDebugResources/out has been removed.
+  Output property 'incrementalFolder' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/packageDebugResources has been removed.
+  Output property 'incrementalFolder' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':app:packageDebugResources'.
+[MergeResources] Inputs are non-incremental full task action.
+Resolve mutations for :app:parseDebugLocalResources (Thread[#123,Execution worker Thread 3,5,main]) started.
+:app:parseDebugLocalResources (Thread[#123,Execution worker Thread 3,5,main]) started.
+Resolve mutations for :app:createDebugCompatibleScreenManifests (Thread[#121,Execution worker,5,main]) started.
+:app:createDebugCompatibleScreenManifests (Thread[#121,Execution worker,5,main]) started.
+
+> Task :app:createDebugCompatibleScreenManifests
+Caching disabled for task ':app:createDebugCompatibleScreenManifests' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:createDebugCompatibleScreenManifests' is not up-to-date because:
+  Output property 'outputFolder' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/compatible_screen_manifest/debug/createDebugCompatibleScreenManifests has been removed.
+  Output property 'outputFolder' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/compatible_screen_manifest/debug/createDebugCompatibleScreenManifests/output-metadata.json has been removed.
+Resolve mutations for :app:extractDeepLinksDebug (Thread[#121,Execution worker,5,main]) started.
+:app:extractDeepLinksDebug (Thread[#121,Execution worker,5,main]) started.
+
+> Task :app:extractDeepLinksDebug
+Caching disabled for task ':app:extractDeepLinksDebug' because:
+  Build cache is disabled
+Task ':app:extractDeepLinksDebug' is not up-to-date because:
+  Output property 'navigationJson' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/navigation_json/debug/extractDeepLinksDebug/navigation.json has been removed.
+Resolve mutations for :app:processDebugMainManifest (Thread[#121,Execution worker,5,main]) started.
+:app:processDebugMainManifest (Thread[#121,Execution worker,5,main]) started.
+
+> Task :app:mergeDebugResources
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-lv/values-lv.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-lv_values-lv.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-lt/values-lt.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-lt_values-lt.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hy/values-hy.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-hy_values-hy.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pt/values-pt.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-pt_values-pt.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ml/values-ml.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ml_values-ml.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-af/values-af.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-af_values-af.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-en-rIN_values-en-rIN.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-mk/values-mk.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-mk_values-mk.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hu/values-hu.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-hu_values-hu.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-mr/values-mr.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-mr_values-mr.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-el/values-el.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-el_values-el.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ur/values-ur.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ur_values-ur.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-lo/values-lo.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-lo_values-lo.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-it/values-it.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-it_values-it.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hr/values-hr.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-hr_values-hr.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ms/values-ms.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ms_values-ms.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-uk/values-uk.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-uk_values-uk.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-b+sr+Latn/values-b+sr+Latn.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-b+sr+Latn_values-b+sr+Latn.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-uz/values-uz.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-uz_values-uz.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-mn/values-mn.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-mn_values-mn.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-is/values-is.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-is_values-is.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fr-rCA/values-fr-rCA.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-fr-rCA_values-fr-rCA.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-zh-rTW_values-zh-rTW.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-in/values-in.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-in_values-in.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ar/values-ar.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ar_values-ar.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-iw/values-iw.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-iw_values-iw.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-my/values-my.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-my_values-my.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-zh-rHK_values-zh-rHK.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-eu/values-eu.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-eu_values-eu.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v21/values-v21.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v21_values-v21.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-az/values-az.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-az_values-az.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-es/values-es.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-es_values-es.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-am/values-am.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-am_values-am.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-nb/values-nb.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-nb_values-nb.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-et/values-et.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-et_values-et.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ro/values-ro.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ro_values-ro.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-as/values-as.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-as_values-as.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ru/values-ru.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ru_values-ru.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ne/values-ne.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ne_values-ne.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-vi/values-vi.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-vi_values-vi.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-es-rUS/values-es-rUS.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-es-rUS_values-es-rUS.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zu/values-zu.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-zu_values-zu.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ja/values-ja.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ja_values-ja.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-pt-rPT_values-pt-rPT.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fr/values-fr.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-fr_values-fr.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-be/values-be.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-be_values-be.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v30/values-v30.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v30_values-v30.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sk/values-sk.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-sk_values-sk.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fa/values-fa.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-fa_values-fa.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sr/values-sr.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-sr_values-sr.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-nl/values-nl.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-nl_values-nl.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fi/values-fi.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-fi_values-fi.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-zh-rCN_values-zh-rCN.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-bn/values-bn.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-bn_values-bn.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-bg/values-bg.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-bg_values-bg.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-kn/values-kn.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-kn_values-kn.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-en-rXC_values-en-rXC.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-bs/values-bs.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-bs_values-bs.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-gl/values-gl.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-gl_values-gl.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rGB/values-en-rGB.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-en-rGB_values-en-rGB.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-si/values-si.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-si_values-si.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-en-rCA_values-en-rCA.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pt-rBR/values-pt-rBR.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-pt-rBR_values-pt-rBR.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ca/values-ca.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ca_values-ca.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sl/values-sl.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-sl_values-sl.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ka/values-ka.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ka_values-ka.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sv/values-sv.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-sv_values-sv.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sq/values-sq.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-sq_values-sq.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-kk/values-kk.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-kk_values-kk.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sw/values-sw.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-sw_values-sw.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-km/values-km.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-km_values-km.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-th/values-th.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-th_values-th.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-or/values-or.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-or_values-or.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-tr/values-tr.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-tr_values-tr.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-gu/values-gu.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-gu_values-gu.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ta/values-ta.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ta_values-ta.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ko/values-ko.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ko_values-ko.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pa/values-pa.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-pa_values-pa.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ky/values-ky.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ky_values-ky.arsc.flat
+Compiling file /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/res/mipmap-xhdpi/ic_launcher.webp to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/mipmap-xhdpi_ic_launcher.webp.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-te/values-te.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-te_values-te.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-cs/values-cs.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-cs_values-cs.arsc.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-da/values-da.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-da_values-da.arsc.flat
+Compiling file /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/res/mipmap-hdpi/ic_launcher.webp to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/mipmap-hdpi_ic_launcher.webp.flat
+Compiling file /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/mipmap-mdpi_ic_launcher_round.webp.flat
+Compiling file /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/mipmap-xxxhdpi_ic_launcher_round.webp.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-tl/values-tl.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-tl_values-tl.arsc.flat
+Compiling file /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/res/mipmap-mdpi/ic_launcher.webp to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/mipmap-mdpi_ic_launcher.webp.flat
+Compiling file /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/mipmap-hdpi_ic_launcher_round.webp.flat
+Compiling file /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/mipmap-xxhdpi_ic_launcher.webp.flat
+Compiling file /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/mipmap-xxhdpi_ic_launcher_round.webp.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-en-rAU_values-en-rAU.arsc.flat
+Compiling xml file /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/res/drawable/ic_launcher_foreground.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/drawable_ic_launcher_foreground.xml.flat
+Compiling XML table /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pl/values-pl.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/values-pl_values-pl.arsc.flat
+Compiling file /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/mipmap-xhdpi_ic_launcher_round.webp.flat
+Compiling xml file /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/res/mipmap-anydpi/ic_launcher.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/mipmap-anydpi_ic_launcher.xml.flat
+Compiling xml file /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/res/xml/backup_rules.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/xml_backup_rules.xml.flat
+Compiling xml file /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/res/drawable/ic_launcher_background.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/drawable_ic_launcher_background.xml.flat
+Compiling xml file /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/res/mipmap-anydpi/ic_launcher_round.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/mipmap-anydpi_ic_launcher_round.xml.flat
+Compiling xml file /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/res/xml/data_extraction_rules.xml to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/xml_data_extraction_rules.xml.flat
+Compiling file /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_res/debug/mergeDebugResources/mipmap-xxxhdpi_ic_launcher.webp.flat
+
+> Task :app:parseDebugLocalResources
+Caching disabled for task ':app:parseDebugLocalResources' because:
+  Build cache is disabled
+Task ':app:parseDebugLocalResources' is not up-to-date because:
+  Output property 'librarySymbolsFile' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt has been removed.
+The input changes require a full rebuild for incremental task ':app:parseDebugLocalResources'.
+
+> Task :app:processDebugMainManifest
+Caching disabled for task ':app:processDebugMainManifest' because:
+  Build cache is disabled
+Task ':app:processDebugMainManifest' is not up-to-date because:
+  Output property 'mergeBlameFile' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/manifest_merge_blame_file/debug/processDebugMainManifest/manifest-merger-blame-debug-report.txt has been removed.
+  Output property 'mergedManifest' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_manifest/debug/processDebugMainManifest/AndroidManifest.xml has been removed.
+  Output property 'reportFile' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/outputs/logs/manifest-merger-debug-report.txt has been removed.
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/3efb3ce9283bef24ef94267c55b9fd8b/transformed/hilt-navigation-compose-1.3.0/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/719a649c2128c45f65524e4f961a4469/transformed/hilt-lifecycle-viewmodel-compose-1.3.0/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/d812efaaa74d24f4ea51246203a1d620/transformed/hilt-lifecycle-viewmodel-1.3.0/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/18a4dc22f4108b2ca2c131e3cecc0820/transformed/hilt-android-2.57.2/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/d4a17b1bf6b230e5b00119f7616064d2/transformed/fragment-1.5.1/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/4f3547a88951f60c7725afebe158f249/transformed/navigation-runtime-release/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/7f049065f0737634eb4e15a68077a7db/transformed/navigation-common-release/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/eab14a1c70db98ec5308d7d40b570c1a/transformed/navigation-compose-release/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/591670748ba5caea1baf424a21de9418/transformed/material3-release/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/e9cf26dabae921abd4eba2db3d70e56c/transformed/loader-1.0.0/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/b9a1c706cef8abf11a93948df0c94acd/transformed/ui-tooling-data/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/de02a9a7ad6e372346d8ffdcaaac8197/transformed/foundation-layout/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/041796f535a04a51dfd915f06295f398/transformed/foundation-release/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/1e059ae14ef9e2cb2140543023465895/transformed/animation/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/cb2d9e39b2841605a5ec85d106d2bcc2/transformed/animation-core/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/7841a6786c5189b3ab413df84f1b10a4/transformed/ui-unit/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/612cc804a65fb6799a684e6f1b7670e9/transformed/ui-graphics-release/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/468275268d815d1ee4c4fa948cbbe333/transformed/ui-geometry/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/2e0722c765b8d3fce6508f2ea9e47482/transformed/ui-tooling-preview/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/a318ec7a9ad00bac54cf43f957707dd5/transformed/ui-tooling/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/be3351638af7c9cc021f907dbc0e2feb/transformed/material-release/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/3ec580cb5108d88c4fec264c2283c515/transformed/material-ripple-release/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/846bc7fc848a6ef4d5989b473ad921c7/transformed/ui-util/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/3f0ea7deb2e5f3492cd740e4cf69f1a6/transformed/ui-text/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/afb5f80c0613320ba1630e73e7775d45/transformed/emoji2-1.4.0/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/7d177d78886b74f1123e54f28abcf554/transformed/lifecycle-process-2.9.4/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/1dc4f3dab1323674137da3b2aa863557/transformed/lifecycle-livedata-core-ktx-2.9.4/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/725fc37abc45ffd22903f7e7ca07b538/transformed/activity-ktx-1.11.0/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/b9f3f6d342e8b510e4c34b313a8c38f5/transformed/lifecycle-viewmodel-ktx-2.9.4/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/6e6b360b52195872aaa47e93650902f8/transformed/lifecycle-livedata-2.9.4/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/94f89b135ea98c3ee2bfff24bd9ac7f2/transformed/lifecycle-runtime-release/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/30b8f2cc5f2ac4233e5d15541cf8307a/transformed/lifecycle-viewmodel-2.9.4/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/114987c1572130cae640f11aea066a00/transformed/lifecycle-viewmodel-release/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/61c3dc8eec48ecb6c79f4e582042227c/transformed/lifecycle-viewmodel-savedstate-2.9.4/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/a4222bb9eaaa92a709740d6ab3d47b67/transformed/lifecycle-viewmodel-savedstate-release/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/f29798246f3596280b927beb0888935f/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/72a222bab1b8101545b3e3542366a62f/transformed/runtime/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/f1b1f9852551906863717c8780b8a3e7/transformed/runtime-annotation/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/9e3b0e96decb4aa6d6840c784e56b2e0/transformed/runtime-saveable/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/bbe84c56fadd2ca55deb04d1db6341e4/transformed/savedstate-compose-release/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/dacf5c4066f6c6d49f3342b8207c7d24/transformed/savedstate-ktx-1.3.1/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/8913f87798ad8e1a561fa876bbb7cd48/transformed/savedstate-1.3.1/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/0247288c3574a4888786ca1e0c49f4e2/transformed/savedstate-release/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/6a3f549bdc42bc1a1db748061732a367/transformed/core-ktx-1.17.0/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/647ea8a76eb358b21d2301db19b820d6/transformed/viewpager-1.0.0/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/e37e7146bb77ca89adf399ef2f6bdff1/transformed/customview-1.0.0/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/4dd2617bbae5e878289b76400e927cac/transformed/autofill-1.0.0/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/a1012b7f7b0af7cf4abf8ba1119a7233/transformed/graphics-path-1.0.1/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/acaf90f2586f4830d28026a7c86e54ac/transformed/core-1.17.0/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/6bbcae254d2fb802eeea238be88953ef/transformed/lifecycle-livedata-core-2.9.4/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/e153cc9feac62dfd04310bd86eaea71a/transformed/lifecycle-runtime-ktx/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/16ca71ed1fd867d31805ac2f4c9ca286/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/c6d0ffd1ba3aa7d5a46ea58caf566dc9/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/a197b1fc8e2074fd9e1fbf4a2d43ed06/transformed/material-icons-core-release/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/c12a1a6d5d8f80ad2683c4d420a4eb01/transformed/ui-release/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/be82b0ee01610d3ec5461d5765e8b4be/transformed/ui-test-manifest-1.9.0/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/1ef6b08e05436c1cb34dded0593eb953/transformed/activity-1.11.0/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/dd2be9053120a9fb31f3970f12221118/transformed/activity-compose-1.11.0/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/f8570386a1ff719526a7e7b9ef2df051/transformed/core-viewtree-1.0.0/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/63f0115361716af3496a910cfcd92123/transformed/annotation-experimental-1.4.1/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/c297e2250e0d7fb79a93285f8950a0b2/transformed/profileinstaller-1.4.0/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/b2d7bd606c238339a132b4d52a58f0f5/transformed/startup-runtime-1.1.1/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/bb334f19292fa42705acc36bf4399ebb/transformed/tracing-1.2.0/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/c581a878d62483235bd66d32ed8552de/transformed/interpolator-1.0.0/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/765174732255039cd6c7cee82fe966a5/transformed/versionedparcelable-1.1.1/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/2fa39a742740ca90ecea81c95bd52d2d/transformed/core-runtime-2.2.0/AndroidManifest.xml
+Loading library manifest /Users/alicia/.gradle/caches/8.13/transforms/fdb2c129c409de9ce8dc4838de099ab6/transformed/dagger-lint-aar-2.57.2/AndroidManifest.xml
+Merging main manifest /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/AndroidManifest.xml
+
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/3efb3ce9283bef24ef94267c55b9fd8b/transformed/hilt-navigation-compose-1.3.0/AndroidManifest.xml
+Merging manifest with lower [androidx.hilt:hilt-navigation-compose:1.3.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.hilt:hilt-navigation-compose:1.3.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/719a649c2128c45f65524e4f961a4469/transformed/hilt-lifecycle-viewmodel-compose-1.3.0/AndroidManifest.xml
+Merging manifest with lower [androidx.hilt:hilt-lifecycle-viewmodel-compose:1.3.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.hilt:hilt-lifecycle-viewmodel-compose:1.3.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/d812efaaa74d24f4ea51246203a1d620/transformed/hilt-lifecycle-viewmodel-1.3.0/AndroidManifest.xml
+Merging manifest with lower [androidx.hilt:hilt-lifecycle-viewmodel:1.3.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.hilt:hilt-lifecycle-viewmodel:1.3.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/18a4dc22f4108b2ca2c131e3cecc0820/transformed/hilt-android-2.57.2/AndroidManifest.xml
+Merging manifest with lower [com.google.dagger:hilt-android:2.57.2] AndroidManifest.xml:16:1-19:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [com.google.dagger:hilt-android:2.57.2] AndroidManifest.xml:18:3-42
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/d4a17b1bf6b230e5b00119f7616064d2/transformed/fragment-1.5.1/AndroidManifest.xml
+Merging manifest with lower [androidx.fragment:fragment:1.5.1] AndroidManifest.xml:17:1-24:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.fragment:fragment:1.5.1] AndroidManifest.xml:20:5-22:41
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/4f3547a88951f60c7725afebe158f249/transformed/navigation-runtime-release/AndroidManifest.xml
+Merging manifest with lower [androidx.navigation:navigation-runtime-android:2.9.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.navigation:navigation-runtime-android:2.9.0] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/7f049065f0737634eb4e15a68077a7db/transformed/navigation-common-release/AndroidManifest.xml
+Merging manifest with lower [androidx.navigation:navigation-common-android:2.9.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.navigation:navigation-common-android:2.9.0] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/eab14a1c70db98ec5308d7d40b570c1a/transformed/navigation-compose-release/AndroidManifest.xml
+Merging manifest with lower [androidx.navigation:navigation-compose-android:2.9.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.navigation:navigation-compose-android:2.9.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/591670748ba5caea1baf424a21de9418/transformed/material3-release/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.material3:material3-android:1.3.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.material3:material3-android:1.3.0] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/e9cf26dabae921abd4eba2db3d70e56c/transformed/loader-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.loader:loader:1.0.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.loader:loader:1.0.0] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/b9a1c706cef8abf11a93948df0c94acd/transformed/ui-tooling-data/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.ui:ui-tooling-data-android:1.9.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.ui:ui-tooling-data-android:1.9.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/de02a9a7ad6e372346d8ffdcaaac8197/transformed/foundation-layout/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.foundation:foundation-layout-android:1.9.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.foundation:foundation-layout-android:1.9.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/041796f535a04a51dfd915f06295f398/transformed/foundation-release/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.foundation:foundation-android:1.9.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.foundation:foundation-android:1.9.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/1e059ae14ef9e2cb2140543023465895/transformed/animation/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.animation:animation-android:1.9.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.animation:animation-android:1.9.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/cb2d9e39b2841605a5ec85d106d2bcc2/transformed/animation-core/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.animation:animation-core-android:1.9.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.animation:animation-core-android:1.9.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/7841a6786c5189b3ab413df84f1b10a4/transformed/ui-unit/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.ui:ui-unit-android:1.9.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.ui:ui-unit-android:1.9.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/612cc804a65fb6799a684e6f1b7670e9/transformed/ui-graphics-release/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.ui:ui-graphics-android:1.9.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.ui:ui-graphics-android:1.9.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/468275268d815d1ee4c4fa948cbbe333/transformed/ui-geometry/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.ui:ui-geometry-android:1.9.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.ui:ui-geometry-android:1.9.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/2e0722c765b8d3fce6508f2ea9e47482/transformed/ui-tooling-preview/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.ui:ui-tooling-preview-android:1.9.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.ui:ui-tooling-preview-android:1.9.0] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/a318ec7a9ad00bac54cf43f957707dd5/transformed/ui-tooling/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.ui:ui-tooling-android:1.9.0] AndroidManifest.xml:17:1-28:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.ui:ui-tooling-android:1.9.0] AndroidManifest.xml:20:5-44
+application defined in both files...
+Merging application with lower [androidx.compose.ui:ui-tooling-android:1.9.0] AndroidManifest.xml:22:5-26:19
+Adopted [activity: null]
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/be3351638af7c9cc021f907dbc0e2feb/transformed/material-release/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.material:material-android:1.7.1] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.material:material-android:1.7.1] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/3ec580cb5108d88c4fec264c2283c515/transformed/material-ripple-release/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.material:material-ripple-android:1.7.1] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.material:material-ripple-android:1.7.1] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/846bc7fc848a6ef4d5989b473ad921c7/transformed/ui-util/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.ui:ui-util-android:1.9.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.ui:ui-util-android:1.9.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/3f0ea7deb2e5f3492cd740e4cf69f1a6/transformed/ui-text/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.ui:ui-text-android:1.9.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.ui:ui-text-android:1.9.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/afb5f80c0613320ba1630e73e7775d45/transformed/emoji2-1.4.0/AndroidManifest.xml
+Merging manifest with lower [androidx.emoji2:emoji2:1.4.0] AndroidManifest.xml:17:1-35:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.emoji2:emoji2:1.4.0] AndroidManifest.xml:21:5-44
+application defined in both files...
+Merging application with lower [androidx.emoji2:emoji2:1.4.0] AndroidManifest.xml:23:5-33:19
+Adopted [provider: null]
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/7d177d78886b74f1123e54f28abcf554/transformed/lifecycle-process-2.9.4/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-process:2.9.4] AndroidManifest.xml:17:1-35:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-process:2.9.4] AndroidManifest.xml:21:5-44
+application defined in both files...
+Merging application with lower [androidx.lifecycle:lifecycle-process:2.9.4] AndroidManifest.xml:23:5-33:19
+provider#androidx.startup.InitializationProvider defined in both files...
+Merging provider#androidx.startup.InitializationProvider with lower [androidx.lifecycle:lifecycle-process:2.9.4] AndroidManifest.xml:24:9-32:20
+Adopted [meta-data: null]
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/1dc4f3dab1323674137da3b2aa863557/transformed/lifecycle-livedata-core-ktx-2.9.4/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.4] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.4] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/725fc37abc45ffd22903f7e7ca07b538/transformed/activity-ktx-1.11.0/AndroidManifest.xml
+Merging manifest with lower [androidx.activity:activity-ktx:1.11.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.activity:activity-ktx:1.11.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/b9f3f6d342e8b510e4c34b313a8c38f5/transformed/lifecycle-viewmodel-ktx-2.9.4/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.4] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.4] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/6e6b360b52195872aaa47e93650902f8/transformed/lifecycle-livedata-2.9.4/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-livedata:2.9.4] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-livedata:2.9.4] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/94f89b135ea98c3ee2bfff24bd9ac7f2/transformed/lifecycle-runtime-release/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-runtime-android:2.9.4] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-runtime-android:2.9.4] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/30b8f2cc5f2ac4233e5d15541cf8307a/transformed/lifecycle-viewmodel-2.9.4/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-viewmodel:2.9.4] AndroidManifest.xml:2:1-5:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-viewmodel:2.9.4] AndroidManifest.xml:4:5-43
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/114987c1572130cae640f11aea066a00/transformed/lifecycle-viewmodel-release/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-viewmodel-android:2.9.4] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-viewmodel-android:2.9.4] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/61c3dc8eec48ecb6c79f4e582042227c/transformed/lifecycle-viewmodel-savedstate-2.9.4/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.9.4] AndroidManifest.xml:2:1-5:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.9.4] AndroidManifest.xml:4:5-43
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/a4222bb9eaaa92a709740d6ab3d47b67/transformed/lifecycle-viewmodel-savedstate-release/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.4] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.4] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/f29798246f3596280b927beb0888935f/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.customview:customview-poolingcontainer:1.0.0] AndroidManifest.xml:17:1-23:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.customview:customview-poolingcontainer:1.0.0] AndroidManifest.xml:20:5-21:38
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/72a222bab1b8101545b3e3542366a62f/transformed/runtime/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.runtime:runtime-android:1.9.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.runtime:runtime-android:1.9.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/f1b1f9852551906863717c8780b8a3e7/transformed/runtime-annotation/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.runtime:runtime-annotation-android:1.9.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.runtime:runtime-annotation-android:1.9.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/9e3b0e96decb4aa6d6840c784e56b2e0/transformed/runtime-saveable/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.runtime:runtime-saveable-android:1.9.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.runtime:runtime-saveable-android:1.9.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/bbe84c56fadd2ca55deb04d1db6341e4/transformed/savedstate-compose-release/AndroidManifest.xml
+Merging manifest with lower [androidx.savedstate:savedstate-compose-android:1.3.1] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.savedstate:savedstate-compose-android:1.3.1] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/dacf5c4066f6c6d49f3342b8207c7d24/transformed/savedstate-ktx-1.3.1/AndroidManifest.xml
+Merging manifest with lower [androidx.savedstate:savedstate-ktx:1.3.1] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.savedstate:savedstate-ktx:1.3.1] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/8913f87798ad8e1a561fa876bbb7cd48/transformed/savedstate-1.3.1/AndroidManifest.xml
+Merging manifest with lower [androidx.savedstate:savedstate:1.3.1] AndroidManifest.xml:2:1-5:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.savedstate:savedstate:1.3.1] AndroidManifest.xml:4:5-43
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/0247288c3574a4888786ca1e0c49f4e2/transformed/savedstate-release/AndroidManifest.xml
+Merging manifest with lower [androidx.savedstate:savedstate-android:1.3.1] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.savedstate:savedstate-android:1.3.1] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/6a3f549bdc42bc1a1db748061732a367/transformed/core-ktx-1.17.0/AndroidManifest.xml
+Merging manifest with lower [androidx.core:core-ktx:1.17.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.core:core-ktx:1.17.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/647ea8a76eb358b21d2301db19b820d6/transformed/viewpager-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.viewpager:viewpager:1.0.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.viewpager:viewpager:1.0.0] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/e37e7146bb77ca89adf399ef2f6bdff1/transformed/customview-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.customview:customview:1.0.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.customview:customview:1.0.0] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/4dd2617bbae5e878289b76400e927cac/transformed/autofill-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.autofill:autofill:1.0.0] AndroidManifest.xml:17:1-24:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.autofill:autofill:1.0.0] AndroidManifest.xml:20:5-22:41
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/a1012b7f7b0af7cf4abf8ba1119a7233/transformed/graphics-path-1.0.1/AndroidManifest.xml
+Merging manifest with lower [androidx.graphics:graphics-path:1.0.1] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.graphics:graphics-path:1.0.1] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/acaf90f2586f4830d28026a7c86e54ac/transformed/core-1.17.0/AndroidManifest.xml
+Merging manifest with lower [androidx.core:core:1.17.0] AndroidManifest.xml:17:1-30:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.core:core:1.17.0] AndroidManifest.xml:20:5-44
+Adopted [permission: null]
+Adopted [uses-permission: null]
+application defined in both files...
+Merging application with lower [androidx.core:core:1.17.0] AndroidManifest.xml:28:5-89
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/6bbcae254d2fb802eeea238be88953ef/transformed/lifecycle-livedata-core-2.9.4/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-livedata-core:2.9.4] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-livedata-core:2.9.4] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/e153cc9feac62dfd04310bd86eaea71a/transformed/lifecycle-runtime-ktx/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-runtime-ktx-android:2.9.4] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-runtime-ktx-android:2.9.4] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/16ca71ed1fd867d31805ac2f4c9ca286/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-runtime-compose-android:2.9.4] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-runtime-compose-android:2.9.4] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/c6d0ffd1ba3aa7d5a46ea58caf566dc9/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.9.4] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.9.4] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/a197b1fc8e2074fd9e1fbf4a2d43ed06/transformed/material-icons-core-release/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.material:material-icons-core-android:1.7.1] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.material:material-icons-core-android:1.7.1] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/c12a1a6d5d8f80ad2683c4d420a4eb01/transformed/ui-release/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.ui:ui-android:1.9.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.ui:ui-android:1.9.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/be82b0ee01610d3ec5461d5765e8b4be/transformed/ui-test-manifest-1.9.0/AndroidManifest.xml
+Merging manifest with lower [androidx.compose.ui:ui-test-manifest:1.9.0] AndroidManifest.xml:17:1-29:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.compose.ui:ui-test-manifest:1.9.0] AndroidManifest.xml:20:5-44
+application defined in both files...
+Merging application with lower [androidx.compose.ui:ui-test-manifest:1.9.0] AndroidManifest.xml:22:5-27:19
+Adopted [activity: null]
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/1ef6b08e05436c1cb34dded0593eb953/transformed/activity-1.11.0/AndroidManifest.xml
+Merging manifest with lower [androidx.activity:activity:1.11.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.activity:activity:1.11.0] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/dd2be9053120a9fb31f3970f12221118/transformed/activity-compose-1.11.0/AndroidManifest.xml
+Merging manifest with lower [androidx.activity:activity-compose:1.11.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.activity:activity-compose:1.11.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/f8570386a1ff719526a7e7b9ef2df051/transformed/core-viewtree-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.core:core-viewtree:1.0.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.core:core-viewtree:1.0.0] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/63f0115361716af3496a910cfcd92123/transformed/annotation-experimental-1.4.1/AndroidManifest.xml
+Merging manifest with lower [androidx.annotation:annotation-experimental:1.4.1] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.annotation:annotation-experimental:1.4.1] AndroidManifest.xml:5:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/c297e2250e0d7fb79a93285f8950a0b2/transformed/profileinstaller-1.4.0/AndroidManifest.xml
+Merging manifest with lower [androidx.profileinstaller:profileinstaller:1.4.0] AndroidManifest.xml:17:1-55:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.profileinstaller:profileinstaller:1.4.0] AndroidManifest.xml:21:5-44
+application defined in both files...
+Merging application with lower [androidx.profileinstaller:profileinstaller:1.4.0] AndroidManifest.xml:23:5-53:19
+provider#androidx.startup.InitializationProvider defined in both files...
+Merging provider#androidx.startup.InitializationProvider with lower [androidx.profileinstaller:profileinstaller:1.4.0] AndroidManifest.xml:24:9-32:20
+Adopted [meta-data: null]
+Adopted [receiver: null]
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/b2d7bd606c238339a132b4d52a58f0f5/transformed/startup-runtime-1.1.1/AndroidManifest.xml
+Merging manifest with lower [androidx.startup:startup-runtime:1.1.1] AndroidManifest.xml:17:1-33:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.startup:startup-runtime:1.1.1] AndroidManifest.xml:21:5-23:41
+application defined in both files...
+Merging application with lower [androidx.startup:startup-runtime:1.1.1] AndroidManifest.xml:25:5-31:19
+provider#androidx.startup.InitializationProvider defined in both files...
+Merging provider#androidx.startup.InitializationProvider with lower [androidx.startup:startup-runtime:1.1.1] AndroidManifest.xml:26:9-30:34
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/bb334f19292fa42705acc36bf4399ebb/transformed/tracing-1.2.0/AndroidManifest.xml
+Merging manifest with lower [androidx.tracing:tracing:1.2.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.tracing:tracing:1.2.0] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/c581a878d62483235bd66d32ed8552de/transformed/interpolator-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.interpolator:interpolator:1.0.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.interpolator:interpolator:1.0.0] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/765174732255039cd6c7cee82fe966a5/transformed/versionedparcelable-1.1.1/AndroidManifest.xml
+Merging manifest with lower [androidx.versionedparcelable:versionedparcelable:1.1.1] AndroidManifest.xml:17:1-27:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.versionedparcelable:versionedparcelable:1.1.1] AndroidManifest.xml:20:5-22:41
+application defined in both files...
+Merging application with lower [androidx.versionedparcelable:versionedparcelable:1.1.1] AndroidManifest.xml:24:5-25:19
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/2fa39a742740ca90ecea81c95bd52d2d/transformed/core-runtime-2.2.0/AndroidManifest.xml
+Merging manifest with lower [androidx.arch.core:core-runtime:2.2.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.arch.core:core-runtime:2.2.0] AndroidManifest.xml:20:5-44
+Merging library manifest /Users/alicia/.gradle/caches/8.13/transforms/fdb2c129c409de9ce8dc4838de099ab6/transformed/dagger-lint-aar-2.57.2/AndroidManifest.xml
+Merging manifest with lower [com.google.dagger:dagger-lint-aar:2.57.2] AndroidManifest.xml:16:1-19:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [com.google.dagger:dagger-lint-aar:2.57.2] AndroidManifest.xml:18:3-42
+Merging result: SUCCESS
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.unitconverter"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="35" />
+10
+11    <permission
+11-->[androidx.core:core:1.17.0] /Users/alicia/.gradle/caches/8.13/transforms/acaf90f2586f4830d28026a7c86e54ac/transformed/core-1.17.0/AndroidManifest.xml:22:5-24:47
+12        android:name="com.example.unitconverter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.17.0] /Users/alicia/.gradle/caches/8.13/transforms/acaf90f2586f4830d28026a7c86e54ac/transformed/core-1.17.0/AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.17.0] /Users/alicia/.gradle/caches/8.13/transforms/acaf90f2586f4830d28026a7c86e54ac/transformed/core-1.17.0/AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="com.example.unitconverter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.17.0] /Users/alicia/.gradle/caches/8.13/transforms/acaf90f2586f4830d28026a7c86e54ac/transformed/core-1.17.0/AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.17.0] /Users/alicia/.gradle/caches/8.13/transforms/acaf90f2586f4830d28026a7c86e54ac/transformed/core-1.17.0/AndroidManifest.xml:26:22-94
+16
+17    <application
+17-->/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/AndroidManifest.xml:3:5-18:19
+18        android:name="com.example.unitconverter.UnitConverterApp"
+18-->/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/AndroidManifest.xml:4:9-41
+19        android:allowBackup="true"
+19-->/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/AndroidManifest.xml:5:9-35
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.17.0] /Users/alicia/.gradle/caches/8.13/transforms/acaf90f2586f4830d28026a7c86e54ac/transformed/core-1.17.0/AndroidManifest.xml:28:18-86
+21        android:debuggable="true"
+22        android:extractNativeLibs="false"
+23        android:icon="@mipmap/ic_launcher"
+23-->/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/AndroidManifest.xml:7:9-43
+24        android:label="Unit Converter"
+24-->/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/AndroidManifest.xml:6:9-39
+25        android:supportsRtl="true"
+25-->/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/AndroidManifest.xml:8:9-35
+26        android:theme="@style/Theme.UnitConverter" >
+26-->/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/AndroidManifest.xml:9:9-51
+27        <activity
+27-->/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/AndroidManifest.xml:10:9-17:20
+28            android:name="com.example.unitconverter.MainActivity"
+28-->/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/AndroidManifest.xml:11:13-41
+29            android:exported="true" >
+29-->/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/AndroidManifest.xml:12:13-36
+30            <intent-filter>
+30-->/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/AndroidManifest.xml:13:13-16:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/AndroidManifest.xml:14:17-69
+31-->/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/AndroidManifest.xml:14:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/AndroidManifest.xml:15:17-77
+33-->/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/AndroidManifest.xml:15:27-74
+34            </intent-filter>
+35        </activity>
+36        <activity
+36-->[androidx.compose.ui:ui-tooling-android:1.9.0] /Users/alicia/.gradle/caches/8.13/transforms/a318ec7a9ad00bac54cf43f957707dd5/transformed/ui-tooling/AndroidManifest.xml:23:9-25:39
+37            android:name="androidx.compose.ui.tooling.PreviewActivity"
+37-->[androidx.compose.ui:ui-tooling-android:1.9.0] /Users/alicia/.gradle/caches/8.13/transforms/a318ec7a9ad00bac54cf43f957707dd5/transformed/ui-tooling/AndroidManifest.xml:24:13-71
+38            android:exported="true" />
+38-->[androidx.compose.ui:ui-tooling-android:1.9.0] /Users/alicia/.gradle/caches/8.13/transforms/a318ec7a9ad00bac54cf43f957707dd5/transformed/ui-tooling/AndroidManifest.xml:25:13-36
+39
+40        <provider
+40-->[androidx.emoji2:emoji2:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/afb5f80c0613320ba1630e73e7775d45/transformed/emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
+41            android:name="androidx.startup.InitializationProvider"
+41-->[androidx.emoji2:emoji2:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/afb5f80c0613320ba1630e73e7775d45/transformed/emoji2-1.4.0/AndroidManifest.xml:25:13-67
+42            android:authorities="com.example.unitconverter.androidx-startup"
+42-->[androidx.emoji2:emoji2:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/afb5f80c0613320ba1630e73e7775d45/transformed/emoji2-1.4.0/AndroidManifest.xml:26:13-68
+43            android:exported="false" >
+43-->[androidx.emoji2:emoji2:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/afb5f80c0613320ba1630e73e7775d45/transformed/emoji2-1.4.0/AndroidManifest.xml:27:13-37
+44            <meta-data
+44-->[androidx.emoji2:emoji2:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/afb5f80c0613320ba1630e73e7775d45/transformed/emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
+45                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+45-->[androidx.emoji2:emoji2:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/afb5f80c0613320ba1630e73e7775d45/transformed/emoji2-1.4.0/AndroidManifest.xml:30:17-75
+46                android:value="androidx.startup" />
+46-->[androidx.emoji2:emoji2:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/afb5f80c0613320ba1630e73e7775d45/transformed/emoji2-1.4.0/AndroidManifest.xml:31:17-49
+47            <meta-data
+47-->[androidx.lifecycle:lifecycle-process:2.9.4] /Users/alicia/.gradle/caches/8.13/transforms/7d177d78886b74f1123e54f28abcf554/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:29:13-31:52
+48                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+48-->[androidx.lifecycle:lifecycle-process:2.9.4] /Users/alicia/.gradle/caches/8.13/transforms/7d177d78886b74f1123e54f28abcf554/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:30:17-78
+49                android:value="androidx.startup" />
+49-->[androidx.lifecycle:lifecycle-process:2.9.4] /Users/alicia/.gradle/caches/8.13/transforms/7d177d78886b74f1123e54f28abcf554/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:31:17-49
+50            <meta-data
+50-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/c297e2250e0d7fb79a93285f8950a0b2/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+51                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+51-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/c297e2250e0d7fb79a93285f8950a0b2/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+52                android:value="androidx.startup" />
+52-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/c297e2250e0d7fb79a93285f8950a0b2/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+53        </provider>
+54
+55        <activity
+55-->[androidx.compose.ui:ui-test-manifest:1.9.0] /Users/alicia/.gradle/caches/8.13/transforms/be82b0ee01610d3ec5461d5765e8b4be/transformed/ui-test-manifest-1.9.0/AndroidManifest.xml:23:9-26:79
+56            android:name="androidx.activity.ComponentActivity"
+56-->[androidx.compose.ui:ui-test-manifest:1.9.0] /Users/alicia/.gradle/caches/8.13/transforms/be82b0ee01610d3ec5461d5765e8b4be/transformed/ui-test-manifest-1.9.0/AndroidManifest.xml:24:13-63
+57            android:exported="true"
+57-->[androidx.compose.ui:ui-test-manifest:1.9.0] /Users/alicia/.gradle/caches/8.13/transforms/be82b0ee01610d3ec5461d5765e8b4be/transformed/ui-test-manifest-1.9.0/AndroidManifest.xml:25:13-36
+58            android:theme="@android:style/Theme.Material.Light.NoActionBar" />
+58-->[androidx.compose.ui:ui-test-manifest:1.9.0] /Users/alicia/.gradle/caches/8.13/transforms/be82b0ee01610d3ec5461d5765e8b4be/transformed/ui-test-manifest-1.9.0/AndroidManifest.xml:26:13-76
+59
+60        <receiver
+60-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/c297e2250e0d7fb79a93285f8950a0b2/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+61            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+61-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/c297e2250e0d7fb79a93285f8950a0b2/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+62            android:directBootAware="false"
+62-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/c297e2250e0d7fb79a93285f8950a0b2/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+63            android:enabled="true"
+63-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/c297e2250e0d7fb79a93285f8950a0b2/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+64            android:exported="true"
+64-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/c297e2250e0d7fb79a93285f8950a0b2/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+65            android:permission="android.permission.DUMP" >
+65-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/c297e2250e0d7fb79a93285f8950a0b2/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+66            <intent-filter>
+66-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/c297e2250e0d7fb79a93285f8950a0b2/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+67                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+67-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/c297e2250e0d7fb79a93285f8950a0b2/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+67-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/c297e2250e0d7fb79a93285f8950a0b2/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+68            </intent-filter>
+69            <intent-filter>
+69-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/c297e2250e0d7fb79a93285f8950a0b2/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+70                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+70-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/c297e2250e0d7fb79a93285f8950a0b2/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+70-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/c297e2250e0d7fb79a93285f8950a0b2/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+71            </intent-filter>
+72            <intent-filter>
+72-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/c297e2250e0d7fb79a93285f8950a0b2/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+73                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+73-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/c297e2250e0d7fb79a93285f8950a0b2/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+73-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/c297e2250e0d7fb79a93285f8950a0b2/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+74            </intent-filter>
+75            <intent-filter>
+75-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/c297e2250e0d7fb79a93285f8950a0b2/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+76                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+76-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/c297e2250e0d7fb79a93285f8950a0b2/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+76-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/alicia/.gradle/caches/8.13/transforms/c297e2250e0d7fb79a93285f8950a0b2/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+77            </intent-filter>
+78        </receiver>
+79    </application>
+80
+81</manifest>
+
+Merged manifest saved to /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_manifest/debug/processDebugMainManifest/AndroidManifest.xml
+Resolve mutations for :app:processDebugManifest (Thread[#123,Execution worker Thread 3,5,main]) started.
+:app:processDebugManifest (Thread[#123,Execution worker Thread 3,5,main]) started.
+
+> Task :app:processDebugManifest
+Caching disabled for task ':app:processDebugManifest' because:
+  Build cache is disabled
+Task ':app:processDebugManifest' is not up-to-date because:
+  Output property 'multiApkManifestOutputDirectory' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_manifests/debug/processDebugManifest has been removed.
+  Output property 'multiApkManifestOutputDirectory' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_manifests/debug/processDebugManifest/AndroidManifest.xml has been removed.
+  Output property 'multiApkManifestOutputDirectory' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/merged_manifests/debug/processDebugManifest/output-metadata.json has been removed.
+Resolve mutations for :app:processDebugManifestForPackage (Thread[#123,Execution worker Thread 3,5,main]) started.
+:app:processDebugManifestForPackage (Thread[#123,Execution worker Thread 3,5,main]) started.
+Resolve mutations for :app:javaPreCompileDebug (Thread[#121,Execution worker,5,main]) started.
+:app:javaPreCompileDebug (Thread[#121,Execution worker,5,main]) started.
+Resolve mutations for :app:preDebugUnitTestBuild (Thread[#122,Execution worker Thread 2,5,main]) started.
+:app:preDebugUnitTestBuild (Thread[#122,Execution worker Thread 2,5,main]) started.
+
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+Skipping task ':app:preDebugUnitTestBuild' as it has no actions.
+Resolve mutations for :app:generateDebugJacocoPropertiesFile (Thread[#122,Execution worker Thread 2,5,main]) started.
+:app:generateDebugJacocoPropertiesFile (Thread[#122,Execution worker Thread 2,5,main]) started.
+Resolve mutations for :app:javaPreCompileDebugUnitTest (Thread[#120,included builds,5,main]) started.
+:app:javaPreCompileDebugUnitTest (Thread[#120,included builds,5,main]) started.
+
+> Task :app:generateDebugJacocoPropertiesFile
+Caching disabled for task ':app:generateDebugJacocoPropertiesFile' because:
+  Build cache is disabled
+  Fast task
+Task ':app:generateDebugJacocoPropertiesFile' is not up-to-date because:
+  Output property 'propertiesDir' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/jacoco_config_resources/debug/generateDebugJacocoPropertiesFile has been removed.
+  Output property 'propertiesDir' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/jacoco_config_resources/debug/generateDebugJacocoPropertiesFile/jacoco-agent.properties has been removed.
+
+> Task :app:processDebugManifestForPackage
+Custom actions are attached to task ':app:processDebugManifestForPackage'.
+Caching disabled for task ':app:processDebugManifestForPackage' because:
+  Build cache is disabled
+Task ':app:processDebugManifestForPackage' is not up-to-date because:
+  Output property 'packageManifests' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/packaged_manifests/debug/processDebugManifestForPackage has been removed.
+  Output property 'packageManifests' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/packaged_manifests/debug/processDebugManifestForPackage/AndroidManifest.xml has been removed.
+  Output property 'packageManifests' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/packaged_manifests/debug/processDebugManifestForPackage/output-metadata.json has been removed.
+Resolve mutations for :app:processDebugResources (Thread[#123,Execution worker Thread 3,5,main]) started.
+:app:processDebugResources (Thread[#123,Execution worker Thread 3,5,main]) started.
+
+> Task :app:javaPreCompileDebug
+Caching disabled for task ':app:javaPreCompileDebug' because:
+  Build cache is disabled
+Task ':app:javaPreCompileDebug' is not up-to-date because:
+  Output property 'annotationProcessorListFile' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json has been removed.
+
+> Task :app:javaPreCompileDebugUnitTest
+Caching disabled for task ':app:javaPreCompileDebugUnitTest' because:
+  Build cache is disabled
+Task ':app:javaPreCompileDebugUnitTest' is not up-to-date because:
+  Output property 'annotationProcessorListFile' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/annotation_processor_list/debugUnitTest/javaPreCompileDebugUnitTest/annotationProcessors.json has been removed.
+
+> Task :app:processDebugResources
+Caching disabled for task ':app:processDebugResources' because:
+  Build cache is disabled
+Task ':app:processDebugResources' is not up-to-date because:
+  Output property 'RClassOutputJar' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/processDebugResources/R.jar has been removed.
+  Output property 'linkedResourcesOutputDir' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/linked_resources_binary_format/debug/processDebugResources has been removed.
+  Output property 'linkedResourcesOutputDir' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/linked_resources_binary_format/debug/processDebugResources/linked-resources-binary-format-debug.ap_ has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':app:processDebugResources'.
+AAPT2 aapt2-8.13.0-13719691-osx Daemon #0: starting
+Aapt output file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/linked_resources_binary_format/debug/processDebugResources/linked-resources-binary-format-debug.ap_
+Resolve mutations for :app:kaptGenerateStubsDebugKotlin (Thread[#123,Execution worker Thread 3,5,main]) started.
+:app:kaptGenerateStubsDebugKotlin (Thread[#123,Execution worker Thread 3,5,main]) started.
+
+> Task :app:kaptGenerateStubsDebugKotlin
+Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :app:compileDebugAndroidTestKotlin
+GradleBuildProject.Builder should not be accessed through AnalyticsConfiguratorService after AnalyticsService is created. Analytics information of this build might be incomplete.
+Caching disabled for task ':app:kaptGenerateStubsDebugKotlin' because:
+  Build cache is disabled
+Task ':app:kaptGenerateStubsDebugKotlin' is not up-to-date because:
+  Output property 'classpathSnapshotProperties.classpathSnapshotDir' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/kotlin/kaptGenerateStubsDebugKotlin/classpath-snapshot has been removed.
+  Output property 'classpathSnapshotProperties.classpathSnapshotDir' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/kotlin/kaptGenerateStubsDebugKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin has been removed.
+  Output property 'destinationDirectory' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/tmp/kapt3/incrementalData/debug has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':app:kaptGenerateStubsDebugKotlin'.
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+Using Kotlin/JVM incremental compilation
+[KOTLIN] Kotlin compilation 'jdkHome' argument: null
+i: starting the daemon as: /Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home/bin/java -cp /Users/alicia/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/2.2.21/b13aed5cf8412f9ee9d1e4db21bdcfebcc24f606/kotlin-compiler-embeddable-2.2.21.jar:/Users/alicia/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.2.21/fa374a986e128314c3db00a20aae55f72a258511/kotlin-stdlib-2.2.21.jar:/Users/alicia/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/2.2.21/e9b021c4e335e4ed7a7e3b32285249ae6bb3a6c8/kotlin-script-runtime-2.2.21.jar:/Users/alicia/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.10/1cbe9c92c12a94eea200d23c2bbaedaf3daf5132/kotlin-reflect-1.6.10.jar:/Users/alicia/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/2.2.21/78fde5db1c92786448170b351d8f8868acabd2ce/kotlin-daemon-embeddable-2.2.21.jar:/Users/alicia/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.8.0/ac1dc37a30a93150b704022f8d895ee1bd3a36b3/kotlinx-coroutines-core-jvm-1.8.0.jar:/Users/alicia/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar -Djava.awt.headless=true -Djava.rmi.server.hostname=127.0.0.1 -Xmx2048m -XX:ReservedCodeCacheSize=320m -Dkotlin.environment.keepalive -ea -XX:+UseCodeCacheFlushing -XX:+UseParallelGC -Dkotlin.daemon.initiator.marker.file=/var/folders/q2/f4cx0gln0wj7ssm_lkyx1dnr0000gn/T/kotlin-compiler-in-nitonverter-9537457426975454389.alive --add-exports java.base/sun.nio.ch=ALL-UNNAMED org.jetbrains.kotlin.daemon.KotlinCompileDaemon --daemon-runFilesPath /Users/alicia/Library/Application Support/kotlin/daemon --daemon-autoshutdownIdleSeconds=7200 --daemon-compilerClasspath /Users/alicia/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/2.2.21/b13aed5cf8412f9ee9d1e4db21bdcfebcc24f606/kotlin-compiler-embeddable-2.2.21.jar:/Users/alicia/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.2.21/fa374a986e128314c3db00a20aae55f72a258511/kotlin-stdlib-2.2.21.jar:/Users/alicia/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/2.2.21/e9b021c4e335e4ed7a7e3b32285249ae6bb3a6c8/kotlin-script-runtime-2.2.21.jar:/Users/alicia/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.10/1cbe9c92c12a94eea200d23c2bbaedaf3daf5132/kotlin-reflect-1.6.10.jar:/Users/alicia/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/2.2.21/78fde5db1c92786448170b351d8f8868acabd2ce/kotlin-daemon-embeddable-2.2.21.jar:/Users/alicia/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.8.0/ac1dc37a30a93150b704022f8d895ee1bd3a36b3/kotlinx-coroutines-core-jvm-1.8.0.jar:/Users/alicia/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar
+i: #1 retrying connecting to the daemon 
+Options for KOTLIN DAEMON: IncrementalCompilationOptions(super=CompilationOptions(compilerMode=INCREMENTAL_COMPILER, targetPlatform=JVM, reportCategories=[0, 3], reportSeverity=2, requestedCompilationResults=[0], kotlinScriptExtensions=[]), sourceChanges=org.jetbrains.kotlin.buildtools.api.SourcesChanges$Unknown@5f85bb70, classpathChanges=NotAvailableForNonIncrementalRun, workingDir=/Users/alicia/AndroidStudioProjects/UnitConverter/app/build/kotlin/kaptGenerateStubsDebugKotlin/cacheable, multiModuleICSettings=MultiModuleICSettings(buildHistoryFile=/Users/alicia/AndroidStudioProjects/UnitConverter/app/build/kotlin/kaptGenerateStubsDebugKotlin/local-state/build-history.bin, useModuleDetection=true), icFeatures=IncrementalCompilationFeatures(usePreciseJavaTracking=true, withAbiSnapshot=false, preciseCompilationResultsBackup=true, keepIncrementalCompilationCachesInMemory=true, enableUnsafeIncrementalCompilationForMultiplatform=false, enableMonotonousIncrementalCompileSetExpansion=true), outputFiles=[/Users/alicia/AndroidStudioProjects/UnitConverter/app/build/tmp/kapt3/incrementalData/debug, /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/tmp/kapt3/stubs/debug, /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/kotlin/kaptGenerateStubsDebugKotlin/cacheable, /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/kotlin/kaptGenerateStubsDebugKotlin/local-state])
+Finished executing kotlin compiler using DAEMON strategy
+Resolve mutations for :app:kaptDebugKotlin (Thread[#123,Execution worker Thread 3,5,main]) started.
+:app:kaptDebugKotlin (Thread[#120,included builds,5,main]) started.
+
+> Task :app:kaptDebugKotlin
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+Caching disabled for task ':app:kaptDebugKotlin' because:
+  Build cache is disabled
+Task ':app:kaptDebugKotlin' is not up-to-date because:
+  Output property 'classesDir' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/tmp/kapt3/classes/debug has been removed.
+  Output property 'classesDir' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/tmp/kapt3/classes/debug/META-INF has been removed.
+  Output property 'classesDir' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/tmp/kapt3/classes/debug/META-INF/proguard has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':app:kaptDebugKotlin'.
+Running kapt annotation processing using the Gradle Worker API
+Using workers PROCESS isolation mode to run kapt
+Kapt worker classpath: [/Users/alicia/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/2.2.21/2ef8b0ce556834be4181293626015c2dca3ff4dc/kotlin-annotation-processing-gradle-2.2.21.jar, /Users/alicia/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.2.21/fa374a986e128314c3db00a20aae55f72a258511/kotlin-stdlib-2.2.21.jar, /Users/alicia/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar]
+Starting process 'Gradle Worker Daemon 1'. Working directory: /Users/alicia/.gradle/workers Command: /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/bin/java @/Users/alicia/.gradle/.tmp/gradle-worker-classpath349244954215318279txt -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Worker Daemon 1'
+Successfully started process 'Gradle Worker Daemon 1'
+Started Gradle worker daemon (1.233 secs) with fork options DaemonForkOptions{executable=/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/bin/java, minHeapSize=null, maxHeapSize=null, jvmArgs=[], keepAliveMode=SESSION}.
+
+This JVM does not support getting OS memory, so no OS memory status updates will be broadcast
+Resolve mutations for :app:compileDebugKotlin (Thread[#120,included builds,5,main]) started.
+:app:compileDebugKotlin (Thread[#120,included builds,5,main]) started.
+
+> Task :app:compileDebugKotlin
+Caching disabled for task ':app:compileDebugKotlin' because:
+  Build cache is disabled
+Task ':app:compileDebugKotlin' is not up-to-date because:
+  Output property 'classpathSnapshotProperties.classpathSnapshotDir' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/kotlin/compileDebugKotlin/classpath-snapshot has been removed.
+  Output property 'classpathSnapshotProperties.classpathSnapshotDir' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/kotlin/compileDebugKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin has been removed.
+  Output property 'destinationDirectory' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/tmp/kotlin-classes/debug has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':app:compileDebugKotlin'.
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+Kotlin source files: /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/java/com/example/unitconverter/viewmodel/ConverterViewModel.kt, /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/java/com/example/unitconverter/ui/theme/Color.kt, /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/java/com/example/unitconverter/ui/theme/Theme.kt, /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/java/com/example/unitconverter/ui/theme/Type.kt, /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/java/com/example/unitconverter/ui/UnitConverterScreen.kt, /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/java/com/example/unitconverter/MainActivity.kt, /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/java/com/example/unitconverter/di/ConverterModule.kt, /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/java/com/example/unitconverter/model/UnitType.kt, /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/java/com/example/unitconverter/model/UnitCategory.kt, /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/java/com/example/unitconverter/UnitConverterApp.kt, /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/java/com/example/unitconverter/domain/DefaultConverterEngine.kt, /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/java/com/example/unitconverter/domain/ConverterEngine.kt
+Java source files: /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/generated/source/kapt/debug/dagger/hilt/internal/aggregatedroot/codegen/_com_example_unitconverter_UnitConverterApp.java, /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/generated/source/kapt/debug/hilt_aggregated_deps/_com_example_unitconverter_di_ConverterModule.java, /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/generated/source/kapt/debug/hilt_aggregated_deps/_com_example_unitconverter_viewmodel_ConverterViewModel_HiltModules_KeyModule.java, /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/generated/source/kapt/debug/hilt_aggregated_deps/_com_example_unitconverter_MainActivity_GeneratedInjector.java, /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/generated/source/kapt/debug/hilt_aggregated_deps/_com_example_unitconverter_UnitConverterApp_GeneratedInjector.java, /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/generated/source/kapt/debug/hilt_aggregated_deps/_com_example_unitconverter_viewmodel_ConverterViewModel_HiltModules_BindsModule.java, /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/generated/source/kapt/debug/com/example/unitconverter/viewmodel/ConverterViewModel_HiltModules.java, /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/generated/source/kapt/debug/com/example/unitconverter/viewmodel/ConverterViewModel_Factory.java, /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/generated/source/kapt/debug/com/example/unitconverter/viewmodel/ConverterViewModel_HiltModules_KeyModule_ProvideFactory.java, /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/generated/source/kapt/debug/com/example/unitconverter/viewmodel/ConverterViewModel_HiltModules_KeyModule_Provide_LazyMapKey.java, /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/generated/source/kapt/debug/com/example/unitconverter/viewmodel/ConverterViewModel_HiltModules_BindsModule_Binds_LazyMapKey.java, /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/generated/source/kapt/debug/com/example/unitconverter/Hilt_MainActivity.java, /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/generated/source/kapt/debug/com/example/unitconverter/MainActivity_GeneratedInjector.java, /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/generated/source/kapt/debug/com/example/unitconverter/UnitConverterApp_GeneratedInjector.java, /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/generated/source/kapt/debug/com/example/unitconverter/domain/DefaultConverterEngine_Factory.java
+Script source files: 
+Script file extensions: 
+Using Kotlin/JVM incremental compilation
+[KOTLIN] Kotlin compilation 'jdkHome' argument: null
+Options for KOTLIN DAEMON: IncrementalCompilationOptions(super=CompilationOptions(compilerMode=INCREMENTAL_COMPILER, targetPlatform=JVM, reportCategories=[0, 3], reportSeverity=2, requestedCompilationResults=[0], kotlinScriptExtensions=[]), sourceChanges=org.jetbrains.kotlin.buildtools.api.SourcesChanges$Unknown@5f85bb70, classpathChanges=NotAvailableForNonIncrementalRun, workingDir=/Users/alicia/AndroidStudioProjects/UnitConverter/app/build/kotlin/compileDebugKotlin/cacheable, multiModuleICSettings=MultiModuleICSettings(buildHistoryFile=/Users/alicia/AndroidStudioProjects/UnitConverter/app/build/kotlin/compileDebugKotlin/local-state/build-history.bin, useModuleDetection=true), icFeatures=IncrementalCompilationFeatures(usePreciseJavaTracking=true, withAbiSnapshot=false, preciseCompilationResultsBackup=true, keepIncrementalCompilationCachesInMemory=true, enableUnsafeIncrementalCompilationForMultiplatform=false, enableMonotonousIncrementalCompileSetExpansion=true), outputFiles=[/Users/alicia/AndroidStudioProjects/UnitConverter/app/build/tmp/kotlin-classes/debug, /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/kotlin/compileDebugKotlin/cacheable, /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/kotlin/compileDebugKotlin/local-state])
+w: file:///Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/java/com/example/unitconverter/ui/UnitConverterScreen.kt:24:37 'fun <reified VM : ViewModel> hiltViewModel(viewModelStoreOwner: ViewModelStoreOwner = ..., key: String? = ...): VM' is deprecated. Moved to package: androidx.hilt.lifecycle.viewmodel.compose.
+Finished executing kotlin compiler using DAEMON strategy
+Resolve mutations for :app:compileDebugJavaWithJavac (Thread[#120,included builds,5,main]) started.
+:app:compileDebugJavaWithJavac (Thread[#120,included builds,5,main]) started.
+This JVM does not support getting OS memory, so no OS memory status updates will be broadcast
+
+> Task :app:compileDebugJavaWithJavac
+Custom actions are attached to task ':app:compileDebugJavaWithJavac'.
+Caching disabled for task ':app:compileDebugJavaWithJavac' because:
+  Build cache is disabled
+Task ':app:compileDebugJavaWithJavac' is not up-to-date because:
+  Output property 'destinationDirectory' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes has been removed.
+  Output property 'destinationDirectory' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com has been removed.
+  Output property 'destinationDirectory' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':app:compileDebugJavaWithJavac'.
+Compilation mode: default, forking compiler
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain '/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home'.
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/java', not found
+Starting process 'Gradle Worker Daemon 2'. Working directory: /Users/alicia/.gradle/workers Command: /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/bin/java --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED @/Users/alicia/.gradle/.tmp/gradle-worker-classpath11353291154662985463txt -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Worker Daemon 2'
+Successfully started process 'Gradle Worker Daemon 2'
+Started Gradle worker daemon (1.008 secs) with fork options DaemonForkOptions{executable=/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/bin/java, minHeapSize=null, maxHeapSize=null, jvmArgs=[--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED, --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED], keepAliveMode=DAEMON}.
+Compiling with JDK Java compiler API.
+Class dependency analysis for incremental compilation took 0.035 secs.
+Created classpath snapshot for incremental compilation in 0.25 secs.
+Resolve mutations for :app:hiltAggregateDepsDebug (Thread[#120,included builds,5,main]) started.
+:app:hiltAggregateDepsDebug (Thread[#120,included builds,5,main]) started.
+
+> Task :app:hiltAggregateDepsDebug
+Caching disabled for task ':app:hiltAggregateDepsDebug' because:
+  Build cache is disabled
+Task ':app:hiltAggregateDepsDebug' is not up-to-date because:
+  Output property 'outputDir' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/generated/hilt/component_trees/debug has been removed.
+  Output property 'outputDir' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/generated/hilt/component_trees/debug/com has been removed.
+  Output property 'outputDir' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/generated/hilt/component_trees/debug/com/example has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':app:hiltAggregateDepsDebug'.
+Resolve mutations for :app:hiltJavaCompileDebug (Thread[#123,Execution worker Thread 3,5,main]) started.
+:app:hiltJavaCompileDebug (Thread[#123,Execution worker Thread 3,5,main]) started.
+
+> Task :app:hiltJavaCompileDebug
+Caching disabled for task ':app:hiltJavaCompileDebug' because:
+  Build cache is disabled
+Task ':app:hiltJavaCompileDebug' is not up-to-date because:
+  Output property 'destinationDirectory' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/hilt/component_classes/debug has been removed.
+  Output property 'destinationDirectory' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/hilt/component_classes/debug/com has been removed.
+  Output property 'destinationDirectory' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/hilt/component_classes/debug/com/example has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':app:hiltJavaCompileDebug'.
+Compilation mode: in-process compilation
+Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
+Compiling with toolchain '/Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home'.
+Compiling with JDK Java compiler API.
+Class dependency analysis for incremental compilation took 0.042 secs.
+Created classpath snapshot for incremental compilation in 0.107 secs.
+Resolve mutations for :app:transformDebugClassesWithAsm (Thread[#120,included builds,5,main]) started.
+:app:transformDebugClassesWithAsm (Thread[#120,included builds,5,main]) started.
+Resolve mutations for :app:processDebugJavaRes (Thread[#123,Execution worker Thread 3,5,main]) started.
+:app:processDebugJavaRes (Thread[#123,Execution worker Thread 3,5,main]) started.
+
+> Task :app:processDebugJavaRes
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/resources', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/resources', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/resources', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/resources', not found
+Caching disabled for task ':app:processDebugJavaRes' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:processDebugJavaRes' is not up-to-date because:
+  Output property 'destinationDir' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/java_res/debug/processDebugJavaRes/out has been removed.
+  Output property 'destinationDir' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/java_res/debug/processDebugJavaRes/out/com has been removed.
+  Output property 'destinationDir' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/java_res/debug/processDebugJavaRes/out/com/example has been removed.
+  and more...
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/resources', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/resources', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/main/resources', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debug/resources', not found
+work action resolve out (project :app) (Thread[#123,Execution worker Thread 3,5,main]) started.
+Resolve mutations for :app:bundleDebugClassesToCompileJar (Thread[#123,Execution worker Thread 3,5,main]) started.
+:app:bundleDebugClassesToCompileJar (Thread[#123,Execution worker Thread 3,5,main]) started.
+
+> Task :app:bundleDebugClassesToCompileJar
+Caching disabled for task ':app:bundleDebugClassesToCompileJar' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:bundleDebugClassesToCompileJar' is not up-to-date because:
+  Output property 'outputJar' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/compile_app_classes_jar/debug/bundleDebugClassesToCompileJar/classes.jar has been removed.
+work action resolve classes.jar (project :app) (Thread[#122,Execution worker Thread 2,5,main]) started.
+Resolve mutations for :app:kaptGenerateStubsDebugUnitTestKotlin (Thread[#122,Execution worker Thread 2,5,main]) started.
+:app:kaptGenerateStubsDebugUnitTestKotlin (Thread[#122,Execution worker Thread 2,5,main]) started.
+
+> Task :app:transformDebugClassesWithAsm
+Caching disabled for task ':app:transformDebugClassesWithAsm' because:
+  Build cache is disabled
+Task ':app:transformDebugClassesWithAsm' is not up-to-date because:
+  Output property 'classesOutputDir' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/classes/debug/transformDebugClassesWithAsm/dirs has been removed.
+  Output property 'classesOutputDir' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/classes/debug/transformDebugClassesWithAsm/dirs/com has been removed.
+  Output property 'classesOutputDir' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/classes/debug/transformDebugClassesWithAsm/dirs/com/example has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':app:transformDebugClassesWithAsm'.
+Resolve mutations for :app:bundleDebugClassesToRuntimeJar (Thread[#120,included builds,5,main]) started.
+:app:bundleDebugClassesToRuntimeJar (Thread[#123,Execution worker Thread 3,5,main]) started.
+
+> Task :app:bundleDebugClassesToRuntimeJar
+Caching disabled for task ':app:bundleDebugClassesToRuntimeJar' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:bundleDebugClassesToRuntimeJar' is not up-to-date because:
+  Output property 'outputJar' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/intermediates/runtime_app_classes_jar/debug/bundleDebugClassesToRuntimeJar/classes.jar has been removed.
+work action resolve classes.jar (project :app) (Thread[#123,Execution worker Thread 3,5,main]) started.
+
+> Task :app:kaptGenerateStubsDebugUnitTestKotlin
+Caching disabled for task ':app:kaptGenerateStubsDebugUnitTestKotlin' because:
+  Build cache is disabled
+Task ':app:kaptGenerateStubsDebugUnitTestKotlin' is not up-to-date because:
+  Output property 'classpathSnapshotProperties.classpathSnapshotDir' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/kotlin/kaptGenerateStubsDebugUnitTestKotlin/classpath-snapshot has been removed.
+  Output property 'classpathSnapshotProperties.classpathSnapshotDir' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/kotlin/kaptGenerateStubsDebugUnitTestKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin has been removed.
+  Output property 'destinationDirectory' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/tmp/kapt3/incrementalData/debugUnitTest has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':app:kaptGenerateStubsDebugUnitTestKotlin'.
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debugUnitTest/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debugUnitTest/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debugUnitTest/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debugUnitTest/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+Using Kotlin/JVM incremental compilation
+[KOTLIN] Kotlin compilation 'jdkHome' argument: null
+Options for KOTLIN DAEMON: IncrementalCompilationOptions(super=CompilationOptions(compilerMode=INCREMENTAL_COMPILER, targetPlatform=JVM, reportCategories=[0, 3], reportSeverity=2, requestedCompilationResults=[0], kotlinScriptExtensions=[]), sourceChanges=org.jetbrains.kotlin.buildtools.api.SourcesChanges$Unknown@5f85bb70, classpathChanges=NotAvailableForNonIncrementalRun, workingDir=/Users/alicia/AndroidStudioProjects/UnitConverter/app/build/kotlin/kaptGenerateStubsDebugUnitTestKotlin/cacheable, multiModuleICSettings=MultiModuleICSettings(buildHistoryFile=/Users/alicia/AndroidStudioProjects/UnitConverter/app/build/kotlin/kaptGenerateStubsDebugUnitTestKotlin/local-state/build-history.bin, useModuleDetection=true), icFeatures=IncrementalCompilationFeatures(usePreciseJavaTracking=true, withAbiSnapshot=false, preciseCompilationResultsBackup=true, keepIncrementalCompilationCachesInMemory=true, enableUnsafeIncrementalCompilationForMultiplatform=false, enableMonotonousIncrementalCompileSetExpansion=true), outputFiles=[/Users/alicia/AndroidStudioProjects/UnitConverter/app/build/tmp/kapt3/incrementalData/debugUnitTest, /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/tmp/kapt3/stubs/debugUnitTest, /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/kotlin/kaptGenerateStubsDebugUnitTestKotlin/cacheable, /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/kotlin/kaptGenerateStubsDebugUnitTestKotlin/local-state])
+Finished executing kotlin compiler using DAEMON strategy
+Resolve mutations for :app:kaptDebugUnitTestKotlin (Thread[#122,Execution worker Thread 2,5,main]) started.
+:app:kaptDebugUnitTestKotlin (Thread[#122,Execution worker Thread 2,5,main]) started.
+
+> Task :app:kaptDebugUnitTestKotlin
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debugUnitTest/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+Caching disabled for task ':app:kaptDebugUnitTestKotlin' because:
+  Build cache is disabled
+Task ':app:kaptDebugUnitTestKotlin' is not up-to-date because:
+  Output property 'classesDir' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/tmp/kapt3/classes/debugUnitTest has been removed.
+  Output property 'destinationDir' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/generated/source/kapt/debugUnitTest has been removed.
+  Output property 'kotlinSourcesDestinationDir' file /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/generated/source/kaptKotlin/debugUnitTest has been removed.
+The input changes require a full rebuild for incremental task ':app:kaptDebugUnitTestKotlin'.
+Running kapt annotation processing using the Gradle Worker API
+Using workers PROCESS isolation mode to run kapt
+Kapt worker classpath: [/Users/alicia/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/2.2.21/2ef8b0ce556834be4181293626015c2dca3ff4dc/kotlin-annotation-processing-gradle-2.2.21.jar, /Users/alicia/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.2.21/fa374a986e128314c3db00a20aae55f72a258511/kotlin-stdlib-2.2.21.jar, /Users/alicia/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar]
+warning: The following options were not recognized by any processor: '[dagger.fastInit, dagger.hilt.android.internal.disableAndroidSuperclassValidation, dagger.hilt.android.internal.projectType, dagger.hilt.internal.useAggregatingRootProcessor, kapt.kotlin.generated]'
+Resolve mutations for :app:compileDebugUnitTestKotlin (Thread[#122,Execution worker Thread 2,5,main]) started.
+:app:compileDebugUnitTestKotlin (Thread[#122,Execution worker Thread 2,5,main]) started.
+
+> Task :app:compileDebugUnitTestKotlin FAILED
+Caching disabled for task ':app:compileDebugUnitTestKotlin' because:
+  Build cache is disabled
+Task ':app:compileDebugUnitTestKotlin' is not up-to-date because:
+  Task has failed previously.
+The input changes require a full rebuild for incremental task ':app:compileDebugUnitTestKotlin'.
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debugUnitTest/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debugUnitTest/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debugUnitTest/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debugUnitTest/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debugUnitTest/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debugUnitTest/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debugUnitTest/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debugUnitTest/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debugUnitTest/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/debugUnitTest/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/kotlin', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+file or directory '/Users/alicia/AndroidStudioProjects/UnitConverter/app/src/testDebug/java', not found
+Kotlin source files: /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/java/com/example/unitconverter/viewmodel/ConverterViewModelTest.kt, /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/java/com/example/unitconverter/ExampleUnitTest.kt, /Users/alicia/AndroidStudioProjects/UnitConverter/app/src/test/java/com/example/unitconverter/model/DefaultConverterEngineTest.kt
+Java source files: 
+Script source files: 
+Script file extensions: 
+Using Kotlin/JVM incremental compilation
+[KOTLIN] Kotlin compilation 'jdkHome' argument: null
+Options for KOTLIN DAEMON: IncrementalCompilationOptions(super=CompilationOptions(compilerMode=INCREMENTAL_COMPILER, targetPlatform=JVM, reportCategories=[0, 3], reportSeverity=2, requestedCompilationResults=[0], kotlinScriptExtensions=[]), sourceChanges=org.jetbrains.kotlin.buildtools.api.SourcesChanges$Unknown@5f85bb70, classpathChanges=NotAvailableForNonIncrementalRun, workingDir=/Users/alicia/AndroidStudioProjects/UnitConverter/app/build/kotlin/compileDebugUnitTestKotlin/cacheable, multiModuleICSettings=MultiModuleICSettings(buildHistoryFile=/Users/alicia/AndroidStudioProjects/UnitConverter/app/build/kotlin/compileDebugUnitTestKotlin/local-state/build-history.bin, useModuleDetection=true), icFeatures=IncrementalCompilationFeatures(usePreciseJavaTracking=true, withAbiSnapshot=false, preciseCompilationResultsBackup=true, keepIncrementalCompilationCachesInMemory=true, enableUnsafeIncrementalCompilationForMultiplatform=false, enableMonotonousIncrementalCompileSetExpansion=true), outputFiles=[/Users/alicia/AndroidStudioProjects/UnitConverter/app/build/tmp/kotlin-classes/debugUnitTest, /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/kotlin/compileDebugUnitTestKotlin/cacheable, /Users/alicia/AndroidStudioProjects/UnitConverter/app/build/kotlin/compileDebugUnitTestKotlin/local-state])
+Finished executing kotlin compiler using DAEMON strategy
+AAPT2 aapt2-8.13.0-13719691-osx Daemon #0: shutdown
+Build 3e79f7f7-8a26-4a9a-b24e-884a595160b6 is closed
+
+[Incubating] Problems report is available at: file:///Users/alicia/AndroidStudioProjects/UnitConverter/build/reports/problems/problems-report.html
+31 actionable tasks: 31 executed
+Watched directory hierarchies: [/Users/alicia/AndroidStudioProjects/UnitConverter]
+Stopped 1 worker daemon(s).
