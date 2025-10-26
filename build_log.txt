@@ -822,7 +822,7 @@ Resolve mutations for :app:generateDebugJacocoPropertiesFile (Thread[#122,Execut
 Resolve mutations for :app:javaPreCompileDebugUnitTest (Thread[#120,included builds,5,main]) started.
 :app:javaPreCompileDebugUnitTest (Thread[#120,included builds,5,main]) started.
 
-> Task :app:generateDebugJacocoPropertiesFile
+> Task :app:generateDebugPropertiesFile
 Caching disabled for task ':app:generateDebugJacocoPropertiesFile' because:
   Build cache is disabled
   Fast task
